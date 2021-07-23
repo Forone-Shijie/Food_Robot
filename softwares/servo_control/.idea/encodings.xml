@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../../../ITR课题组研究/烹饪机器人/【正点原子】探索者STM32F407开发板资料 资料盘(A盘)/4，程序源码/4，标准例程-HAL库版本/3，标准例程-HAL库版本/实验4 串口通信实验/SYSTEM/usart/usart.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../../../../ITR课题组研究/烹饪机器人/【正点原子】探索者STM32F407开发板资料 资料盘(A盘)/4，程序源码/4，标准例程-HAL库版本/3，标准例程-HAL库版本/实验4 串口通信实验/USER/main.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Src/main.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Src/syscalls.c" charset="GBK" />
   </component>
 </project>
