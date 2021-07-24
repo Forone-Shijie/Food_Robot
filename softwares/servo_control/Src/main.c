@@ -46,6 +46,7 @@ UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
+/* Private variables ---------------------------------------------------------*/
 
 /* USER CODE END PV */
 
@@ -70,53 +71,8 @@ static void MX_USART3_UART_Init(void);
 char RxBuffer[RXBUFFERSIZE];   //接收数据
 uint8_t aRxBuffer;            //接收中断缓冲
 uint8_t Uart3_Rx_Cnt = 0;        //接收缓冲计数
-
-//void Receive_com_data() {
-//    if (flag == 1) {
-//        printf("msg_buff = %s ;len = %d\r\n", msg_buff, len_u2);
-//        HAL_Delay(100); //加延时，保证接收到数据过长的时候，等待数据存入缓存区发送
-//        HAL_UART_Transmit(&huart1, msg_buff, len_u2, 100);     //将串口4接收到的数据通过串口3传出
-//        printf("1");
-//        memset(msg_buff, 0, sizeof(msg_buff));   //清空缓存区
-//        // 指向接收缓存的头部
-//        msg = msg_buff;
-//        (&huart2)->pRxBuffPtr = msg;
-//        flag = 0;
-//        len_u2 = 0;//每次数据长度清0
-//    }
-//    HAL_Delay(10);
-//}
-
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-    /* Prevent unused argument(s) compilation warning */
-    UNUSED(huart);
-    /* NOTE: This function Should not be modified, when the callback is needed,
-             the HAL_UART_TxCpltCallback could be implemented in the user file
-     */
-
-    if (Uart3_Rx_Cnt >= 255)  //溢出判断
-    {
-        Uart3_Rx_Cnt = 0;
-        memset(RxBuffer, 0x00, sizeof(RxBuffer));
-        HAL_UART_Transmit(&huart1, (uint8_t *) "数据溢出", 10, 0xFFFF);
-
-    } else {
-        RxBuffer[Uart3_Rx_Cnt++] = aRxBuffer;   //接收数据转存
-        printf("1");
-
-//        if ((RxBuffer[Uart3_Rx_Cnt - 1] == 0x0A) && (RxBuffer[Uart3_Rx_Cnt - 2] == 0x0D)) //判断结束位
-        if (RxBuffer[Uart3_Rx_Cnt - 1] == '3') //&& (RxBuffer[Uart3_Rx_Cnt - 2] == 0x0D)) //判断结束位
-        {
-            HAL_UART_Transmit(&huart1, (uint8_t *) &RxBuffer, Uart3_Rx_Cnt, 0xFFFF); //将收到的信息发送出去
-            while (HAL_UART_GetState(&huart1) == HAL_UART_STATE_BUSY_TX);//检测UART发送结束
-            Uart3_Rx_Cnt = 0;
-            memset(RxBuffer, 0x00, sizeof(RxBuffer)); //清空数组
-        }
-    }
-
-    HAL_UART_Receive_IT(&huart1, (uint8_t *) &aRxBuffer, 1);   //再开启接收中断
-}
-
+uint8_t USART3_RX_BUF[100];
+uint8_t Rxdata = 0;
 
 uint8_t Servo_data[13] = {0xFF, 0xFF, 0x01, 0x09, 0x03, 0x2A, 0x00, 0x08, 0x00, 0x00, 0xD0, 0x07, 0xE9};//2048
 void Cal_com_data(uint8_t id, int position, int speed) {
@@ -187,7 +143,7 @@ int main(void) {
 
     /* USER CODE BEGIN Init */
     RetargetInit(&huart1);
-    HAL_UART_Receive_IT(&huart1, (uint8_t *) &aRxBuffer, 1);
+    HAL_UART_Receive_IT(&huart2, (uint8_t *) &aRxBuffer, 1);
     /* USER CODE END Init */
 
     /* Configure the system clock */
@@ -214,6 +170,9 @@ int main(void) {
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
+    HAL_UART_Receive_IT(&huart2, USART3_RX_BUF, 1);
+    //HAL_UART_Transmit(&huart1, USART3_RX_BUF, sizeof(USART3_RX_BUF), 100);
+
     while (1) {
         /* USER CODE END WHILE */
 
@@ -224,7 +183,18 @@ int main(void) {
 //        HAL_Delay(2000);
 //        Receive_com_data();
 //        printf("32 \r\n");
-
+//        printf("%02x\r\n", Rxdata);
+//        HAL_Delay(3000);
+        while (Rxdata) {
+            if (Rxdata == 1) {
+                Servo_action1();
+                Rxdata = 0;
+            }
+            if (Rxdata == 2) {
+                Servo_action2();
+                Rxdata = 0;
+            }
+        }
     }
     /* USER CODE END 3 */
 }
@@ -392,6 +362,17 @@ static void MX_GPIO_Init(void) {
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+
+    if (huart->Instance == USART2) {
+//        Rxdata = RxBuffer[0];
+//        printf("%02x", RxBuffer[0]);
+        //HAL_UART_Transmit(&huart1, USART3_RX_BUF, 1, 100);//串口1发送接收buff里的东西
+        printf("%x", USART3_RX_BUF[0]);
+        Rxdata = USART3_RX_BUF[0];
+        HAL_UART_Receive_IT(&huart2, USART3_RX_BUF, 1);    //重新开启串口3接收中断
+    }
+}
 
 /* USER CODE END 4 */
 
