@@ -11,15 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69a254a3-3779-4583-9c08-788ea6b1dc58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/servo_control.elf.dir/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/servo_control.elf.dir/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/servo_control.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/servo_control.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/servo_control.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/servo_control.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/servo_control.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/servo_control.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/servo_control.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/servo_control.map" afterDir="false" />
-    </list>
+    <list default="true" id="69a254a3-3779-4583-9c08-788ea6b1dc58" name="Default Changelist" comment="completed control of servos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,8 +88,16 @@
       <workItem from="1627267818540" duration="1579000" />
       <workItem from="1627282918855" duration="264000" />
       <workItem from="1627283994249" duration="2447000" />
-      <workItem from="1627286718628" duration="596000" />
+      <workItem from="1627286718628" duration="775000" />
     </task>
+    <task id="LOCAL-00001" summary="completed control of servos">
+      <created>1627289502082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627289502082</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,11 +111,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="completed control of servos" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed control of servos" />
   </component>
 </project>
