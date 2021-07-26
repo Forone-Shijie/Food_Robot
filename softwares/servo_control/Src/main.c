@@ -94,34 +94,108 @@ void Cal_com_data(uint8_t id, int position, int speed) {
     Servo_data[12] = check_data;
 }
 
+//Servos all up
 void Servo_action1() {
-    Cal_com_data(1, 3000, 3400);
-    HAL_Delay(100);
+    Cal_com_data(1, 2700, 3400);
+//    HAL_Delay(100);
     HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data(2, 3000, 3400);
-    HAL_Delay(100);
+    Cal_com_data(2, 2700, 3400);
+//    HAL_Delay(100);
     HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data(3, 3000, 3400);
-    HAL_Delay(100);
+    Cal_com_data(3, 2700, 3400);
+//    HAL_Delay(100);
     HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data(4, 3000, 3400);
-    HAL_Delay(100);
+    Cal_com_data(4, 2700, 3400);
+//    HAL_Delay(100);
     HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
 }
 
+//Servos all down
 void Servo_action2() {
     Cal_com_data(1, 2048, 3400);
-    HAL_Delay(100);
+//    HAL_Delay(100);
     HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
     Cal_com_data(2, 2048, 3400);
-    HAL_Delay(100);
+//    HAL_Delay(100);
     HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
     Cal_com_data(3, 2048, 3400);
-    HAL_Delay(100);
+//    HAL_Delay(100);
     HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
     Cal_com_data(4, 2048, 3400);
-    HAL_Delay(100);
+//    HAL_Delay(100);
     HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+}
+
+//Servos rolls
+void Servo_action3() {
+    Cal_com_data(1, 2048, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(2, 2281, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(3, 2700, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(4, 2356, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    HAL_Delay(300);
+
+    Cal_com_data(1, 2048, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(2, 2690, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(3, 2700, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(4, 2045, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    HAL_Delay(300);
+
+    Cal_com_data(1, 2665, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(2, 2700, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(3, 2066, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(4, 2045, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    HAL_Delay(300);
+
+    Cal_com_data(1, 2501, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(2, 2051, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(3, 2066, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(4, 2497, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    HAL_Delay(300);
+
+    Cal_com_data(1, 2048, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(2, 2281, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(3, 2700, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
+    Cal_com_data(4, 2356, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+
 }
 
 
@@ -181,17 +255,27 @@ int main(void) {
 //        HAL_Delay(2000);
 //        Servo_action2();
 //        HAL_Delay(2000);
-//        Receive_com_data();
-//        printf("32 \r\n");
-//        printf("%02x\r\n", Rxdata);
-//        HAL_Delay(3000);
+//        Servo_action3();
+//        HAL_Delay(2000);
+
         while (Rxdata) {
             if (Rxdata == 1) {
                 Servo_action1();
+                HAL_Delay(1000);
+                Servo_action2();
+                HAL_Delay(500);
+                Servo_action1();
+                HAL_Delay(1000);
+                Servo_action2();
+
                 Rxdata = 0;
             }
             if (Rxdata == 2) {
+                Servo_action3();
+                HAL_Delay(500);
+                Servo_action3();
                 Servo_action2();
+
                 Rxdata = 0;
             }
         }
@@ -199,43 +283,60 @@ int main(void) {
     /* USER CODE END 3 */
 }
 
+
 /**
   * @brief System Clock Configuration
   * @retval None
   */
 void SystemClock_Config(void) {
+
     RCC_OscInitTypeDef RCC_OscInitStruct = {0};
     RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-    /** Configure the main internal regulator output voltage
-    */
+/** Configure the main internal regulator output voltage
+*/
     __HAL_RCC_PWR_CLK_ENABLE();
     __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
-    /** Initializes the RCC Oscillators according to the specified parameters
-    * in the RCC_OscInitTypeDef structure.
-    */
-    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-    RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-    RCC_OscInitStruct.PLL.PLLM = 4;
-    RCC_OscInitStruct.PLL.PLLN = 168;
-    RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-    RCC_OscInitStruct.PLL.PLLQ = 4;
+/** Initializes the RCC Oscillators according to the specified parameters
+* in the RCC_OscInitTypeDef structure.
+*/
+    RCC_OscInitStruct.
+            OscillatorType = RCC_OSCILLATORTYPE_HSE;
+    RCC_OscInitStruct.
+            HSEState = RCC_HSE_ON;
+    RCC_OscInitStruct.PLL.
+            PLLState = RCC_PLL_ON;
+    RCC_OscInitStruct.PLL.
+            PLLSource = RCC_PLLSOURCE_HSE;
+    RCC_OscInitStruct.PLL.
+            PLLM = 4;
+    RCC_OscInitStruct.PLL.
+            PLLN = 168;
+    RCC_OscInitStruct.PLL.
+            PLLP = RCC_PLLP_DIV2;
+    RCC_OscInitStruct.PLL.
+            PLLQ = 4;
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
         Error_Handler();
+
     }
-    /** Initializes the CPU, AHB and APB buses clocks
-    */
-    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
-                                  | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
-    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
-    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV8;
+/** Initializes the CPU, AHB and APB buses clocks
+*/
+    RCC_ClkInitStruct.
+            ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+                        | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+    RCC_ClkInitStruct.
+            SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+    RCC_ClkInitStruct.
+            AHBCLKDivider = RCC_SYSCLK_DIV1;
+    RCC_ClkInitStruct.
+            APB1CLKDivider = RCC_HCLK_DIV4;
+    RCC_ClkInitStruct.
+            APB2CLKDivider = RCC_HCLK_DIV8;
 
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK) {
         Error_Handler();
+
     }
 }
 

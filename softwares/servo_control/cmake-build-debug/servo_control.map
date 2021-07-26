@@ -1087,7 +1087,7 @@ LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
                 0x08000000                g_pfnVectors
                 0x08000188                . = ALIGN (0x4)
 
-.text           0x080001c0     0x89dc
+.text           0x080001c0     0x8c1c
                 0x080001c0                . = ALIGN (0x4)
  *(.text)
  .text          0x080001c0       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
@@ -1257,518 +1257,522 @@ LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
                 0x080023f8       0x34 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
                 0x080023f8                Cal_com_data
  .text.Servo_action1
-                0x0800242c       0x90 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x0800242c       0x78 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
                 0x0800242c                Servo_action1
  .text.Servo_action2
-                0x080024bc       0x90 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
-                0x080024bc                Servo_action2
+                0x080024a4       0x78 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x080024a4                Servo_action2
+ .text.Servo_action3
+                0x0800251c      0x238 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x0800251c                Servo_action3
  .text.HAL_UART_RxCpltCallback
-                0x0800254c       0x3c CMakeFiles/servo_control.elf.dir/Src/main.c.obj
-                0x0800254c                HAL_UART_RxCpltCallback
+                0x08002754       0x3c CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x08002754                HAL_UART_RxCpltCallback
  .text.Error_Handler
-                0x08002588        0x4 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
-                0x08002588                Error_Handler
+                0x08002790        0x4 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x08002790                Error_Handler
  .text.MX_USART1_UART_Init
-                0x0800258c       0x34 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x08002794       0x34 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
  .text.MX_USART2_UART_Init
-                0x080025c0       0x34 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x080027c8       0x34 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
  .text.MX_USART3_UART_Init
-                0x080025f4       0x34 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x080027fc       0x34 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
  .text.SystemClock_Config
-                0x08002628       0xa8 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
-                0x08002628                SystemClock_Config
- .text.main     0x080026d0       0x78 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
-                0x080026d0                main
+                0x08002830       0xa8 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x08002830                SystemClock_Config
+ .text.main     0x080028d8       0xac CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x080028d8                main
  .text.RetargetInit
-                0x08002748       0x20 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
-                0x08002748                RetargetInit
- .text._isatty  0x08002768       0x16 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
-                0x08002768                _isatty
- *fill*         0x0800277e        0x2 
- .text._write   0x08002780       0x34 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
-                0x08002780                _write
- .text._close   0x080027b4       0x18 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
-                0x080027b4                _close
- .text._lseek   0x080027cc       0x10 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
-                0x080027cc                _lseek
- .text._read    0x080027dc       0x30 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
-                0x080027dc                _read
- .text._fstat   0x0800280c       0x1a CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
-                0x0800280c                _fstat
- *fill*         0x08002826        0x2 
+                0x08002984       0x20 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+                0x08002984                RetargetInit
+ .text._isatty  0x080029a4       0x16 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+                0x080029a4                _isatty
+ *fill*         0x080029ba        0x2 
+ .text._write   0x080029bc       0x34 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+                0x080029bc                _write
+ .text._close   0x080029f0       0x18 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+                0x080029f0                _close
+ .text._lseek   0x08002a08       0x10 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+                0x08002a08                _lseek
+ .text._read    0x08002a18       0x30 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+                0x08002a18                _read
+ .text._fstat   0x08002a48       0x1a CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+                0x08002a48                _fstat
+ *fill*         0x08002a62        0x2 
  .text.HAL_MspInit
-                0x08002828       0x38 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
-                0x08002828                HAL_MspInit
+                0x08002a64       0x38 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+                0x08002a64                HAL_MspInit
  .text.HAL_UART_MspInit
-                0x08002860      0x148 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
-                0x08002860                HAL_UART_MspInit
+                0x08002a9c      0x148 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+                0x08002a9c                HAL_UART_MspInit
  .text.NMI_Handler
-                0x080029a8        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029a8                NMI_Handler
+                0x08002be4        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002be4                NMI_Handler
  .text.HardFault_Handler
-                0x080029aa        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029aa                HardFault_Handler
+                0x08002be6        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002be6                HardFault_Handler
  .text.MemManage_Handler
-                0x080029ac        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029ac                MemManage_Handler
+                0x08002be8        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002be8                MemManage_Handler
  .text.BusFault_Handler
-                0x080029ae        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029ae                BusFault_Handler
+                0x08002bea        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bea                BusFault_Handler
  .text.UsageFault_Handler
-                0x080029b0        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029b0                UsageFault_Handler
+                0x08002bec        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bec                UsageFault_Handler
  .text.SVC_Handler
-                0x080029b2        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029b2                SVC_Handler
+                0x08002bee        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bee                SVC_Handler
  .text.DebugMon_Handler
-                0x080029b4        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029b4                DebugMon_Handler
+                0x08002bf0        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bf0                DebugMon_Handler
  .text.PendSV_Handler
-                0x080029b6        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029b6                PendSV_Handler
+                0x08002bf2        0x2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bf2                PendSV_Handler
  .text.SysTick_Handler
-                0x080029b8        0x8 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029b8                SysTick_Handler
+                0x08002bf4        0x8 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bf4                SysTick_Handler
  .text.USART1_IRQHandler
-                0x080029c0       0x10 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029c0                USART1_IRQHandler
+                0x08002bfc       0x10 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002bfc                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x080029d0       0x10 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029d0                USART2_IRQHandler
+                0x08002c0c       0x10 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002c0c                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x080029e0       0x10 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
-                0x080029e0                USART3_IRQHandler
- .text._getpid  0x080029f0        0x4 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
-                0x080029f0                _getpid
- .text._kill    0x080029f4       0x10 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
-                0x080029f4                _kill
- .text._exit    0x08002a04        0xc CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
-                0x08002a04                _exit
- .text._sbrk    0x08002a10       0x3c CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
-                0x08002a10                _sbrk
+                0x08002c1c       0x10 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x08002c1c                USART3_IRQHandler
+ .text._getpid  0x08002c2c        0x4 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+                0x08002c2c                _getpid
+ .text._kill    0x08002c30       0x10 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+                0x08002c30                _kill
+ .text._exit    0x08002c40        0xc CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+                0x08002c40                _exit
+ .text._sbrk    0x08002c4c       0x3c CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+                0x08002c4c                _sbrk
  .text.SystemInit
-                0x08002a4c        0x2 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
-                0x08002a4c                SystemInit
- *fill*         0x08002a4e        0x2 
+                0x08002c88        0x2 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+                0x08002c88                SystemInit
+ *fill*         0x08002c8a        0x2 
  .text.Reset_Handler
-                0x08002a50       0x50 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
-                0x08002a50                Reset_Handler
+                0x08002c8c       0x50 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
+                0x08002c8c                Reset_Handler
  .text.Default_Handler
-                0x08002aa0        0x2 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
-                0x08002aa0                RTC_Alarm_IRQHandler
-                0x08002aa0                HASH_RNG_IRQHandler
-                0x08002aa0                EXTI2_IRQHandler
-                0x08002aa0                TIM8_CC_IRQHandler
-                0x08002aa0                TIM1_CC_IRQHandler
-                0x08002aa0                DMA2_Stream5_IRQHandler
-                0x08002aa0                DMA1_Stream5_IRQHandler
-                0x08002aa0                PVD_IRQHandler
-                0x08002aa0                SDIO_IRQHandler
-                0x08002aa0                TAMP_STAMP_IRQHandler
-                0x08002aa0                CAN2_RX1_IRQHandler
-                0x08002aa0                EXTI3_IRQHandler
-                0x08002aa0                TIM8_TRG_COM_TIM14_IRQHandler
-                0x08002aa0                TIM1_UP_TIM10_IRQHandler
-                0x08002aa0                TIM8_UP_TIM13_IRQHandler
-                0x08002aa0                I2C3_ER_IRQHandler
-                0x08002aa0                EXTI0_IRQHandler
-                0x08002aa0                I2C2_EV_IRQHandler
-                0x08002aa0                DMA1_Stream2_IRQHandler
-                0x08002aa0                CAN1_RX0_IRQHandler
-                0x08002aa0                FPU_IRQHandler
-                0x08002aa0                OTG_HS_WKUP_IRQHandler
-                0x08002aa0                CAN2_SCE_IRQHandler
-                0x08002aa0                DMA2_Stream2_IRQHandler
-                0x08002aa0                SPI1_IRQHandler
-                0x08002aa0                TIM6_DAC_IRQHandler
-                0x08002aa0                TIM1_BRK_TIM9_IRQHandler
-                0x08002aa0                DCMI_IRQHandler
-                0x08002aa0                CAN2_RX0_IRQHandler
-                0x08002aa0                DMA2_Stream3_IRQHandler
-                0x08002aa0                USART6_IRQHandler
-                0x08002aa0                CAN1_RX1_IRQHandler
-                0x08002aa0                UART5_IRQHandler
-                0x08002aa0                DMA2_Stream0_IRQHandler
-                0x08002aa0                TIM4_IRQHandler
-                0x08002aa0                I2C1_EV_IRQHandler
-                0x08002aa0                DMA1_Stream6_IRQHandler
-                0x08002aa0                DMA1_Stream1_IRQHandler
-                0x08002aa0                UART4_IRQHandler
-                0x08002aa0                TIM3_IRQHandler
-                0x08002aa0                RCC_IRQHandler
-                0x08002aa0                TIM8_BRK_TIM12_IRQHandler
-                0x08002aa0                Default_Handler
-                0x08002aa0                EXTI15_10_IRQHandler
-                0x08002aa0                ADC_IRQHandler
-                0x08002aa0                DMA1_Stream7_IRQHandler
-                0x08002aa0                TIM7_IRQHandler
-                0x08002aa0                CAN2_TX_IRQHandler
-                0x08002aa0                TIM5_IRQHandler
-                0x08002aa0                DMA2_Stream7_IRQHandler
-                0x08002aa0                I2C3_EV_IRQHandler
-                0x08002aa0                EXTI9_5_IRQHandler
-                0x08002aa0                RTC_WKUP_IRQHandler
-                0x08002aa0                ETH_WKUP_IRQHandler
-                0x08002aa0                SPI2_IRQHandler
-                0x08002aa0                OTG_HS_EP1_IN_IRQHandler
-                0x08002aa0                DMA1_Stream0_IRQHandler
-                0x08002aa0                CAN1_TX_IRQHandler
-                0x08002aa0                EXTI4_IRQHandler
-                0x08002aa0                FSMC_IRQHandler
-                0x08002aa0                ETH_IRQHandler
-                0x08002aa0                OTG_HS_EP1_OUT_IRQHandler
-                0x08002aa0                WWDG_IRQHandler
-                0x08002aa0                TIM2_IRQHandler
-                0x08002aa0                OTG_FS_WKUP_IRQHandler
-                0x08002aa0                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08002aa0                OTG_HS_IRQHandler
-                0x08002aa0                EXTI1_IRQHandler
-                0x08002aa0                I2C2_ER_IRQHandler
-                0x08002aa0                DMA2_Stream1_IRQHandler
-                0x08002aa0                CAN1_SCE_IRQHandler
-                0x08002aa0                FLASH_IRQHandler
-                0x08002aa0                DMA2_Stream4_IRQHandler
-                0x08002aa0                OTG_FS_IRQHandler
-                0x08002aa0                SPI3_IRQHandler
-                0x08002aa0                DMA1_Stream4_IRQHandler
-                0x08002aa0                I2C1_ER_IRQHandler
-                0x08002aa0                DMA2_Stream6_IRQHandler
-                0x08002aa0                DMA1_Stream3_IRQHandler
- *fill*         0x08002aa2        0x2 
- .text.__errno  0x08002aa4        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
-                0x08002aa4                __errno
+                0x08002cdc        0x2 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
+                0x08002cdc                RTC_Alarm_IRQHandler
+                0x08002cdc                HASH_RNG_IRQHandler
+                0x08002cdc                EXTI2_IRQHandler
+                0x08002cdc                TIM8_CC_IRQHandler
+                0x08002cdc                TIM1_CC_IRQHandler
+                0x08002cdc                DMA2_Stream5_IRQHandler
+                0x08002cdc                DMA1_Stream5_IRQHandler
+                0x08002cdc                PVD_IRQHandler
+                0x08002cdc                SDIO_IRQHandler
+                0x08002cdc                TAMP_STAMP_IRQHandler
+                0x08002cdc                CAN2_RX1_IRQHandler
+                0x08002cdc                EXTI3_IRQHandler
+                0x08002cdc                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08002cdc                TIM1_UP_TIM10_IRQHandler
+                0x08002cdc                TIM8_UP_TIM13_IRQHandler
+                0x08002cdc                I2C3_ER_IRQHandler
+                0x08002cdc                EXTI0_IRQHandler
+                0x08002cdc                I2C2_EV_IRQHandler
+                0x08002cdc                DMA1_Stream2_IRQHandler
+                0x08002cdc                CAN1_RX0_IRQHandler
+                0x08002cdc                FPU_IRQHandler
+                0x08002cdc                OTG_HS_WKUP_IRQHandler
+                0x08002cdc                CAN2_SCE_IRQHandler
+                0x08002cdc                DMA2_Stream2_IRQHandler
+                0x08002cdc                SPI1_IRQHandler
+                0x08002cdc                TIM6_DAC_IRQHandler
+                0x08002cdc                TIM1_BRK_TIM9_IRQHandler
+                0x08002cdc                DCMI_IRQHandler
+                0x08002cdc                CAN2_RX0_IRQHandler
+                0x08002cdc                DMA2_Stream3_IRQHandler
+                0x08002cdc                USART6_IRQHandler
+                0x08002cdc                CAN1_RX1_IRQHandler
+                0x08002cdc                UART5_IRQHandler
+                0x08002cdc                DMA2_Stream0_IRQHandler
+                0x08002cdc                TIM4_IRQHandler
+                0x08002cdc                I2C1_EV_IRQHandler
+                0x08002cdc                DMA1_Stream6_IRQHandler
+                0x08002cdc                DMA1_Stream1_IRQHandler
+                0x08002cdc                UART4_IRQHandler
+                0x08002cdc                TIM3_IRQHandler
+                0x08002cdc                RCC_IRQHandler
+                0x08002cdc                TIM8_BRK_TIM12_IRQHandler
+                0x08002cdc                Default_Handler
+                0x08002cdc                EXTI15_10_IRQHandler
+                0x08002cdc                ADC_IRQHandler
+                0x08002cdc                DMA1_Stream7_IRQHandler
+                0x08002cdc                TIM7_IRQHandler
+                0x08002cdc                CAN2_TX_IRQHandler
+                0x08002cdc                TIM5_IRQHandler
+                0x08002cdc                DMA2_Stream7_IRQHandler
+                0x08002cdc                I2C3_EV_IRQHandler
+                0x08002cdc                EXTI9_5_IRQHandler
+                0x08002cdc                RTC_WKUP_IRQHandler
+                0x08002cdc                ETH_WKUP_IRQHandler
+                0x08002cdc                SPI2_IRQHandler
+                0x08002cdc                OTG_HS_EP1_IN_IRQHandler
+                0x08002cdc                DMA1_Stream0_IRQHandler
+                0x08002cdc                CAN1_TX_IRQHandler
+                0x08002cdc                EXTI4_IRQHandler
+                0x08002cdc                FSMC_IRQHandler
+                0x08002cdc                ETH_IRQHandler
+                0x08002cdc                OTG_HS_EP1_OUT_IRQHandler
+                0x08002cdc                WWDG_IRQHandler
+                0x08002cdc                TIM2_IRQHandler
+                0x08002cdc                OTG_FS_WKUP_IRQHandler
+                0x08002cdc                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08002cdc                OTG_HS_IRQHandler
+                0x08002cdc                EXTI1_IRQHandler
+                0x08002cdc                I2C2_ER_IRQHandler
+                0x08002cdc                DMA2_Stream1_IRQHandler
+                0x08002cdc                CAN1_SCE_IRQHandler
+                0x08002cdc                FLASH_IRQHandler
+                0x08002cdc                DMA2_Stream4_IRQHandler
+                0x08002cdc                OTG_FS_IRQHandler
+                0x08002cdc                SPI3_IRQHandler
+                0x08002cdc                DMA1_Stream4_IRQHandler
+                0x08002cdc                I2C1_ER_IRQHandler
+                0x08002cdc                DMA2_Stream6_IRQHandler
+                0x08002cdc                DMA1_Stream3_IRQHandler
+ *fill*         0x08002cde        0x2 
+ .text.__errno  0x08002ce0        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
+                0x08002ce0                __errno
  .text.__libc_init_array
-                0x08002ab0       0x48 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
-                0x08002ab0                __libc_init_array
- .text.memset   0x08002af8       0xa4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
-                0x08002af8                memset
- .text.printf   0x08002b9c       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-printf.o)
-                0x08002b9c                printf
- .text.setvbuf  0x08002bc4      0x1b0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-setvbuf.o)
-                0x08002bc4                setvbuf
+                0x08002cec       0x48 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+                0x08002cec                __libc_init_array
+ .text.memset   0x08002d34       0xa4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+                0x08002d34                memset
+ .text.printf   0x08002dd8       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-printf.o)
+                0x08002dd8                printf
+ .text.setvbuf  0x08002e00      0x1b0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-setvbuf.o)
+                0x08002e00                setvbuf
  .text._vfprintf_r
-                0x08002d74     0x1ad4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
-                0x08002d74                _vfprintf_r
+                0x08002fb0     0x1ad4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x08002fb0                _vfprintf_r
  .text.__sbprintf
-                0x08004848       0x80 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x08004a84       0x80 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
  .text.__swsetup_r
-                0x080048c8       0xd4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wsetup.o)
-                0x080048c8                __swsetup_r
+                0x08004b04       0xd4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wsetup.o)
+                0x08004b04                __swsetup_r
  .text.startup.register_fini
-                0x0800499c       0x14 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x080049b0        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
-                0x080049b0                atexit
- .text.quorem   0x080049bc      0x124 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
- .text._dtoa_r  0x08004ae0      0xec4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
-                0x08004ae0                _dtoa_r
+                0x08004bd8       0x14 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08004bec        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+                0x08004bec                atexit
+ .text.quorem   0x08004bf8      0x124 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
+ *fill*         0x08004d1c        0x4 
+ .text._dtoa_r  0x08004d20      0xec4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
+                0x08004d20                _dtoa_r
  .text.__sflush_r
-                0x080059a4      0x120 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fflush.o)
-                0x080059a4                __sflush_r
+                0x08005be4      0x120 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fflush.o)
+                0x08005be4                __sflush_r
  .text._fflush_r
-                0x08005ac4       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fflush.o)
-                0x08005ac4                _fflush_r
+                0x08005d04       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fflush.o)
+                0x08005d04                _fflush_r
  .text._cleanup_r
-                0x08005b20        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
-                0x08005b20                _cleanup_r
- .text.__sinit  0x08005b2c      0x10c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
-                0x08005b2c                __sinit
+                0x08005d60        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
+                0x08005d60                _cleanup_r
+ .text.__sinit  0x08005d6c      0x10c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
+                0x08005d6c                __sinit
  .text.__sfp_lock_acquire
-                0x08005c38        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
-                0x08005c38                __sfp_lock_acquire
+                0x08005e78        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
+                0x08005e78                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x08005c44        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
-                0x08005c44                __sfp_lock_release
+                0x08005e84        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
+                0x08005e84                __sfp_lock_release
  .text.__libc_fini_array
-                0x08005c50       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
-                0x08005c50                __libc_fini_array
+                0x08005e90       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+                0x08005e90                __libc_fini_array
  .text._malloc_trim_r
-                0x08005c7c       0xa0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
-                0x08005c7c                _malloc_trim_r
- .text._free_r  0x08005d1c      0x20c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
-                0x08005d1c                _free_r
+                0x08005ebc       0xa0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
+                0x08005ebc                _malloc_trim_r
+ .text._free_r  0x08005f5c      0x20c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
+                0x08005f5c                _free_r
  .text._fwalk_reent
-                0x08005f28       0x48 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fwalk.o)
-                0x08005f28                _fwalk_reent
+                0x08006168       0x48 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fwalk.o)
+                0x08006168                _fwalk_reent
  .text._localeconv_r
-                0x08005f70        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-localeconv.o)
-                0x08005f70                _localeconv_r
+                0x080061b0        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-localeconv.o)
+                0x080061b0                _localeconv_r
  .text.__retarget_lock_init_recursive
-                0x08005f78        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08005f78                __retarget_lock_init_recursive
+                0x080061b8        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x080061b8                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x08005f7c        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08005f7c                __retarget_lock_close_recursive
+                0x080061bc        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x080061bc                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x08005f80        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08005f80                __retarget_lock_acquire_recursive
+                0x080061c0        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x080061c0                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08005f84        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08005f84                __retarget_lock_release_recursive
+                0x080061c4        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x080061c4                __retarget_lock_release_recursive
  .text.__smakebuf_r
-                0x08005f88       0xe0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-makebuf.o)
-                0x08005f88                __smakebuf_r
+                0x080061c8       0xe0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-makebuf.o)
+                0x080061c8                __smakebuf_r
  .text.__swhatbuf_r
-                0x08006068       0x60 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-makebuf.o)
-                0x08006068                __swhatbuf_r
- .text.malloc   0x080060c8       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
-                0x080060c8                malloc
+                0x080062a8       0x60 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-makebuf.o)
+                0x080062a8                __swhatbuf_r
+ .text.malloc   0x08006308       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
+                0x08006308                malloc
  .text._malloc_r
-                0x080060d8      0x560 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
-                0x080060d8                _malloc_r
+                0x08006318      0x560 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
+                0x08006318                _malloc_r
  .text.__malloc_lock
-                0x08006638        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
-                0x08006638                __malloc_lock
+                0x08006878        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
+                0x08006878                __malloc_lock
  .text.__malloc_unlock
-                0x08006644        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
-                0x08006644                __malloc_unlock
- .text._Balloc  0x08006650       0x4c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08006650                _Balloc
- .text._Bfree   0x0800669c       0x14 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800669c                _Bfree
+                0x08006884        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
+                0x08006884                __malloc_unlock
+ .text._Balloc  0x08006890       0x4c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006890                _Balloc
+ .text._Bfree   0x080068dc       0x14 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x080068dc                _Bfree
  .text.__multadd
-                0x080066b0       0xa0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x080066b0                __multadd
+                0x080068f0       0xa0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x080068f0                __multadd
  .text.__hi0bits
-                0x08006750       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08006750                __hi0bits
+                0x08006990       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006990                __hi0bits
  .text.__lo0bits
-                0x08006790       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08006790                __lo0bits
- .text.__i2b    0x080067ec       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x080067ec                __i2b
+                0x080069d0       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x080069d0                __lo0bits
+ .text.__i2b    0x08006a2c       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006a2c                __i2b
  .text.__multiply
-                0x08006848      0x15c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08006848                __multiply
+                0x08006a88      0x15c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006a88                __multiply
  .text.__pow5mult
-                0x080069a4       0xc0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x080069a4                __pow5mult
+                0x08006be4       0xc0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006be4                __pow5mult
  .text.__lshift
-                0x08006a64       0xf0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08006a64                __lshift
- .text.__mcmp   0x08006b54       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08006b54                __mcmp
- .text.__mdiff  0x08006b94      0x14c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08006b94                __mdiff
- .text.__d2b    0x08006ce0       0xc4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08006ce0                __d2b
- .text.frexp    0x08006da4       0x70 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-s_frexp.o)
-                0x08006da4                frexp
- .text._sbrk_r  0x08006e14       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
-                0x08006e14                _sbrk_r
- .text.__sread  0x08006e38       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
-                0x08006e38                __sread
+                0x08006ca4       0xf0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006ca4                __lshift
+ .text.__mcmp   0x08006d94       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006d94                __mcmp
+ .text.__mdiff  0x08006dd4      0x14c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006dd4                __mdiff
+ .text.__d2b    0x08006f20       0xc4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08006f20                __d2b
+ .text.frexp    0x08006fe4       0x70 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-s_frexp.o)
+                0x08006fe4                frexp
+ .text._sbrk_r  0x08007054       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
+                0x08007054                _sbrk_r
+ .text.__sread  0x08007078       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
+                0x08007078                __sread
  .text.__swrite
-                0x08006e5c       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
-                0x08006e5c                __swrite
- .text.__sseek  0x08006e9c       0x20 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
-                0x08006e9c                __sseek
+                0x0800709c       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
+                0x0800709c                __swrite
+ .text.__sseek  0x080070dc       0x20 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
+                0x080070dc                __sseek
  .text.__sclose
-                0x08006ebc        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
-                0x08006ebc                __sclose
- .text.strncpy  0x08006ec4       0x64 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strncpy.o)
-                0x08006ec4                strncpy
+                0x080070fc        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
+                0x080070fc                __sclose
+ .text.strncpy  0x08007104       0x64 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strncpy.o)
+                0x08007104                strncpy
  .text.__sprint_r.part.0
-                0x08006f28       0x78 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08007168       0x78 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x08006fa0       0x14 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
-                0x08006fa0                __sprint_r
+                0x080071e0       0x14 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x080071e0                __sprint_r
  .text._vfiprintf_r
-                0x08006fb4      0xd94 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
-                0x08006fb4                _vfiprintf_r
+                0x080071f4      0xd94 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x080071f4                _vfiprintf_r
  .text.__sbprintf
-                0x08007d48       0x80 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08007f88       0x80 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
  .text._write_r
-                0x08007dc8       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-writer.o)
-                0x08007dc8                _write_r
+                0x08008008       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-writer.o)
+                0x08008008                _write_r
  .text.__register_exitproc
-                0x08007df4       0x8c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
-                0x08007df4                __register_exitproc
+                0x08008034       0x8c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+                0x08008034                __register_exitproc
  .text.__assert_func
-                0x08007e80       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-assert.o)
-                0x08007e80                __assert_func
+                0x080080c0       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-assert.o)
+                0x080080c0                __assert_func
  .text._calloc_r
-                0x08007ec0       0x60 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-callocr.o)
-                0x08007ec0                _calloc_r
+                0x08008100       0x60 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-callocr.o)
+                0x08008100                _calloc_r
  .text._close_r
-                0x08007f20       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-closer.o)
-                0x08007f20                _close_r
+                0x08008160       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-closer.o)
+                0x08008160                _close_r
  .text._fclose_r
-                0x08007f44       0xcc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fclose.o)
-                0x08007f44                _fclose_r
+                0x08008184       0xcc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fclose.o)
+                0x08008184                _fclose_r
  .text.fiprintf
-                0x08008010       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fiprintf.o)
-                0x08008010                fiprintf
+                0x08008250       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fiprintf.o)
+                0x08008250                fiprintf
  .text.__fputwc
-                0x08008038       0xa8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputwc.o)
-                0x08008038                __fputwc
+                0x08008278       0xa8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputwc.o)
+                0x08008278                __fputwc
  .text._fputwc_r
-                0x080080e0       0x68 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputwc.o)
-                0x080080e0                _fputwc_r
+                0x08008320       0x68 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputwc.o)
+                0x08008320                _fputwc_r
  .text._fstat_r
-                0x08008148       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fstatr.o)
-                0x08008148                _fstat_r
+                0x08008388       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fstatr.o)
+                0x08008388                _fstat_r
  .text.__sfvwrite_r
-                0x08008174      0x2e8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fvwrite.o)
-                0x08008174                __sfvwrite_r
+                0x080083b4      0x2e8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fvwrite.o)
+                0x080083b4                __sfvwrite_r
  .text._isatty_r
-                0x0800845c       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-isattyr.o)
-                0x0800845c                _isatty_r
+                0x0800869c       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-isattyr.o)
+                0x0800869c                _isatty_r
  .text.__locale_mb_cur_max
-                0x08008480        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
-                0x08008480                __locale_mb_cur_max
+                0x080086c0        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
+                0x080086c0                __locale_mb_cur_max
  .text._lseek_r
-                0x0800848c       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lseekr.o)
-                0x0800848c                _lseek_r
+                0x080086cc       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lseekr.o)
+                0x080086cc                _lseek_r
  .text.__ascii_mbtowc
-                0x080084b8       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mbtowc_r.o)
-                0x080084b8                __ascii_mbtowc
- .text.memmove  0x080084e4       0xf8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memmove.o)
-                0x080084e4                memmove
- .text._read_r  0x080085dc       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-readr.o)
-                0x080085dc                _read_r
+                0x080086f8       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mbtowc_r.o)
+                0x080086f8                __ascii_mbtowc
+ .text.memmove  0x08008724       0xf8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memmove.o)
+                0x08008724                memmove
+ .text._read_r  0x0800881c       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-readr.o)
+                0x0800881c                _read_r
  .text._realloc_r
-                0x08008608      0x3d8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reallocr.o)
-                0x08008608                _realloc_r
+                0x08008848      0x3d8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reallocr.o)
+                0x08008848                _realloc_r
  .text.__swbuf_r
-                0x080089e0       0xb0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wbuf.o)
-                0x080089e0                __swbuf_r
+                0x08008c20       0xb0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wbuf.o)
+                0x08008c20                __swbuf_r
  .text._wcrtomb_r
-                0x08008a90       0x3c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wcrtomb.o)
-                0x08008a90                _wcrtomb_r
+                0x08008cd0       0x3c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wcrtomb.o)
+                0x08008cd0                _wcrtomb_r
  .text.__ascii_wctomb
-                0x08008acc       0x1c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wctomb_r.o)
-                0x08008acc                __ascii_wctomb
- .text.abort    0x08008ae8       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-abort.o)
-                0x08008ae8                abort
- .text.raise    0x08008af8       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signal.o)
-                0x08008af8                raise
- .text._kill_r  0x08008b54       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signalr.o)
-                0x08008b54                _kill_r
+                0x08008d0c       0x1c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wctomb_r.o)
+                0x08008d0c                __ascii_wctomb
+ .text.abort    0x08008d28       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-abort.o)
+                0x08008d28                abort
+ .text.raise    0x08008d38       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signal.o)
+                0x08008d38                raise
+ .text._kill_r  0x08008d94       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signalr.o)
+                0x08008d94                _kill_r
  .text._getpid_r
-                0x08008b80        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signalr.o)
-                0x08008b80                _getpid_r
+                0x08008dc0        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signalr.o)
+                0x08008dc0                _getpid_r
  *(.glue_7)
- .glue_7        0x08008b84        0x0 linker stubs
+ .glue_7        0x08008dc4        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08008b84        0x0 linker stubs
+ .glue_7t       0x08008dc4        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08008b84        0x0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x08008dc4        0x0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x08008b84        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crti.o
-                0x08008b84                _init
- .init          0x08008b88        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x08008dc4        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crti.o
+                0x08008dc4                _init
+ .init          0x08008dc8        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x08008b90        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crti.o
-                0x08008b90                _fini
- .fini          0x08008b94        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtn.o
-                0x08008b9c                . = ALIGN (0x4)
-                0x08008b9c                _etext = .
+ .fini          0x08008dd0        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crti.o
+                0x08008dd0                _fini
+ .fini          0x08008dd4        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtn.o
+                0x08008ddc                . = ALIGN (0x4)
+                0x08008ddc                _etext = .
 
-.vfp11_veneer   0x08008b9c        0x0
- .vfp11_veneer  0x08008b9c        0x0 linker stubs
+.vfp11_veneer   0x08008ddc        0x0
+ .vfp11_veneer  0x08008ddc        0x0 linker stubs
 
-.v4_bx          0x08008b9c        0x0
- .v4_bx         0x08008b9c        0x0 linker stubs
+.v4_bx          0x08008ddc        0x0
+ .v4_bx         0x08008ddc        0x0 linker stubs
 
-.iplt           0x08008b9c        0x0
- .iplt          0x08008b9c        0x0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x08008ddc        0x0
+ .iplt          0x08008ddc        0x0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x08008ba0      0x418
-                0x08008ba0                . = ALIGN (0x4)
+.rodata         0x08008de0      0x418
+                0x08008de0                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.HAL_UART_RxCpltCallback.str1.4
-                0x08008ba0        0x3 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
- *fill*         0x08008ba3        0x1 
+                0x08008de0        0x3 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+ *fill*         0x08008de3        0x1 
  .rodata.AHBPrescTable
-                0x08008ba4       0x10 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
-                0x08008ba4                AHBPrescTable
+                0x08008de4       0x10 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+                0x08008de4                AHBPrescTable
  .rodata.APBPrescTable
-                0x08008bb4        0x8 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
-                0x08008bb4                APBPrescTable
+                0x08008df4        0x8 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+                0x08008df4                APBPrescTable
  .rodata._global_impure_ptr
-                0x08008bbc        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
-                0x08008bbc                _global_impure_ptr
+                0x08008dfc        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
+                0x08008dfc                _global_impure_ptr
  .rodata._vfprintf_r.str1.4
-                0x08008bc0       0x42 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
- *fill*         0x08008c02        0x2 
+                0x08008e00       0x42 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
+ *fill*         0x08008e42        0x2 
  .rodata.blanks.1
-                0x08008c04       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x08008e44       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
  .rodata.zeroes.0
-                0x08008c14       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x08008e54       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
  .rodata._dtoa_r.str1.4
-                0x08008c24       0xa1 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
+                0x08008e64       0xa1 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
                                  0xa5 (size before relaxing)
- *fill*         0x08008cc5        0x3 
+ *fill*         0x08008f05        0x3 
  .rodata.__multadd.str1.4
-                0x08008cc8       0x7e f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008f08       0x7e f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
                                  0x92 (size before relaxing)
- *fill*         0x08008d46        0x2 
+ *fill*         0x08008f86        0x2 
  .rodata.__mprec_bigtens
-                0x08008d48       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08008d48                __mprec_bigtens
+                0x08008f88       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008f88                __mprec_bigtens
  .rodata.__mprec_tens
-                0x08008d70       0xc8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
-                0x08008d70                __mprec_tens
- .rodata.p05.0  0x08008e38        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008fb0       0xc8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+                0x08008fb0                __mprec_tens
+ .rodata.p05.0  0x08009078        0xc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
  .rodata._vfiprintf_r.str1.4
-                0x08008e44       0x2f f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08009084       0x2f f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.blanks.1
-                0x08008e44       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08009084       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.zeroes.0
-                0x08008e54       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x08009094       0x10 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.__assert_func.str1.4
-                0x08008e64       0x3f f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-assert.o)
+                0x080090a4       0x3f f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-assert.o)
                                  0x43 (size before relaxing)
- *fill*         0x08008ea3        0x1 
+ *fill*         0x080090e3        0x1 
  .rodata._setlocale_r.str1.4
-                0x08008ea4        0xa f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
+                0x080090e4        0xa f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
                                   0xd (size before relaxing)
- *fill*         0x08008eae        0x2 
+ *fill*         0x080090ee        0x2 
  .rodata.str1.4
-                0x08008eb0        0x2 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
- *fill*         0x08008eb2        0x2 
+                0x080090f0        0x2 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
+ *fill*         0x080090f2        0x2 
  .rodata._ctype_
-                0x08008eb4      0x101 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-ctype_.o)
-                0x08008eb4                _ctype_
-                0x08008fb8                . = ALIGN (0x4)
- *fill*         0x08008fb5        0x3 
+                0x080090f4      0x101 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-ctype_.o)
+                0x080090f4                _ctype_
+                0x080091f8                . = ALIGN (0x4)
+ *fill*         0x080091f5        0x3 
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08008fb8        0x8
-                0x08008fb8                __exidx_start = .
+.ARM            0x080091f8        0x8
+                0x080091f8                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08008fb8        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x08008fc0                __exidx_end = .
+ .ARM.exidx     0x080091f8        0x8 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x08009200                __exidx_end = .
 
-.rel.dyn        0x08008fc0        0x0
- .rel.iplt      0x08008fc0        0x0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x08009200        0x0
+ .rel.iplt      0x08009200        0x0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x08008fc0        0x0
-                0x08008fc0                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08009200        0x0
+                0x08009200                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08008fc0                PROVIDE (__preinit_array_end = .)
+                0x08009200                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08008fc0        0x8
-                0x08008fc0                PROVIDE (__init_array_start = .)
+.init_array     0x08009200        0x8
+                0x08009200                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08008fc0        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x08009200        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08008fc4        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08008fc8                PROVIDE (__init_array_end = .)
+ .init_array    0x08009204        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x08009208                PROVIDE (__init_array_end = .)
 
-.fini_array     0x08008fc8        0x4
-                0x08008fc8                PROVIDE (__fini_array_start = .)
+.fini_array     0x08009208        0x4
+                0x08009208                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08008fc8        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08008fcc                PROVIDE (__fini_array_end = .)
-                0x08008fcc                _sidata = LOADADDR (.data)
+ .fini_array    0x08009208        0x4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0800920c                PROVIDE (__fini_array_end = .)
+                0x0800920c                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x9c8 load address 0x08008fcc
+.data           0x20000000      0x9c8 load address 0x0800920c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1809,12 +1813,12 @@ LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
                 0x2000085c                __global_locale
                 0x200009c8                . = ALIGN (0x4)
                 0x200009c8                _edata = .
-                0x08009994                _siccmram = LOADADDR (.ccmram)
+                0x08009bd4                _siccmram = LOADADDR (.ccmram)
 
-.igot.plt       0x200009c8        0x0 load address 0x08009994
+.igot.plt       0x200009c8        0x0 load address 0x08009bd4
  .igot.plt      0x200009c8        0x0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x08009994
+.ccmram         0x10000000        0x0 load address 0x08009bd4
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _sccmram = .
  *(.ccmram)
@@ -2071,35 +2075,35 @@ LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
 LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
 LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0x9a55
+.debug_info     0x00000000     0xa01b
  .debug_info    0x00000000      0x9f0 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_info    0x000009f0     0x1098 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_info    0x00001a88      0xb3f CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_info    0x000025c7      0x7b0 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .debug_info    0x00002d77      0xb03 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_info    0x0000387a     0x1cf2 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x0000556c     0x12ba CMakeFiles/servo_control.elf.dir/Src/main.c.obj
- .debug_info    0x00006826     0x12f4 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
- .debug_info    0x00007b1a      0xd8a CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x000088a4      0x6c2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_info    0x00008f66      0x750 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
- .debug_info    0x000096b6      0x37d CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_info    0x00009a33       0x22 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
+ .debug_info    0x0000556c     0x1880 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+ .debug_info    0x00006dec     0x12f4 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+ .debug_info    0x000080e0      0xd8a CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x00008e6a      0x6c2 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_info    0x0000952c      0x750 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+ .debug_info    0x00009c7c      0x37d CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_info    0x00009ff9       0x22 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
 
-.debug_abbrev   0x00000000     0x1b04
+.debug_abbrev   0x00000000     0x1ad9
  .debug_abbrev  0x00000000      0x206 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_abbrev  0x00000206      0x36a CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_abbrev  0x00000570      0x2c2 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_abbrev  0x00000832      0x1ef CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .debug_abbrev  0x00000a21      0x28a CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_abbrev  0x00000cab      0x274 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_abbrev  0x00000f1f      0x30d CMakeFiles/servo_control.elf.dir/Src/main.c.obj
- .debug_abbrev  0x0000122c      0x2b4 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
- .debug_abbrev  0x000014e0      0x1b8 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x00001698      0x167 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x000017ff      0x1da CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
- .debug_abbrev  0x000019d9      0x119 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_abbrev  0x00001af2       0x12 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
+ .debug_abbrev  0x00000f1f      0x2e2 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x00001201      0x2b4 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+ .debug_abbrev  0x000014b5      0x1b8 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x0000166d      0x167 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x000017d4      0x1da CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+ .debug_abbrev  0x000019ae      0x119 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_abbrev  0x00001ac7       0x12 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
 
 .debug_loc      0x00000000     0x49a9
  .debug_loc     0x00000000      0x141 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
@@ -2114,7 +2118,7 @@ LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_loc     0x000044af      0x3a2 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
  .debug_loc     0x00004851      0x158 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
 
-.debug_aranges  0x00000000      0x750
+.debug_aranges  0x00000000      0x758
  .debug_aranges
                 0x00000000       0xf0 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_aranges
@@ -2128,51 +2132,51 @@ LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_aranges
                 0x00000308      0x200 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_aranges
-                0x00000508       0x70 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                0x00000508       0x78 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
  .debug_aranges
-                0x00000578       0x50 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+                0x00000580       0x50 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
  .debug_aranges
-                0x000005c8       0x30 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+                0x000005d0       0x30 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
  .debug_aranges
-                0x000005f8       0x78 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+                0x00000600       0x78 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
  .debug_aranges
-                0x00000670       0x90 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+                0x00000678       0x90 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
  .debug_aranges
-                0x00000700       0x28 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+                0x00000708       0x28 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
  .debug_aranges
-                0x00000728       0x28 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
+                0x00000730       0x28 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
 
-.debug_ranges   0x00000000      0x700
+.debug_ranges   0x00000000      0x708
  .debug_ranges  0x00000000       0xe0 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_ranges  0x000000e0       0xf8 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_ranges  0x000001d8       0x80 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_ranges  0x00000258       0x48 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .debug_ranges  0x000002a0       0x90 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_ranges  0x00000330      0x1f0 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_ranges  0x00000520       0x60 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
- .debug_ranges  0x00000580       0x40 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
- .debug_ranges  0x000005c0       0x20 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_ranges  0x000005e0       0x68 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_ranges  0x00000648       0x80 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
- .debug_ranges  0x000006c8       0x18 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_ranges  0x000006e0       0x20 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
+ .debug_ranges  0x00000520       0x68 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+ .debug_ranges  0x00000588       0x40 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+ .debug_ranges  0x000005c8       0x20 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_ranges  0x000005e8       0x68 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_ranges  0x00000650       0x80 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+ .debug_ranges  0x000006d0       0x18 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_ranges  0x000006e8       0x20 CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
 
-.debug_line     0x00000000     0x6edd
+.debug_line     0x00000000     0x6f24
  .debug_line    0x00000000      0x655 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_line    0x00000655      0x868 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_line    0x00000ebd      0xec5 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_line    0x00001d82      0x7a3 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .debug_line    0x00002525      0xbd2 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_line    0x000030f7     0x217e CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x00005275      0x7b8 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
- .debug_line    0x00005a2d      0x527 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
- .debug_line    0x00005f54      0x3ef CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x00006343      0x3fb CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_line    0x0000673e      0x441 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
- .debug_line    0x00006b7f      0x2b2 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_line    0x00006e31       0xac CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
+ .debug_line    0x00005275      0x7ff CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+ .debug_line    0x00005a74      0x527 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+ .debug_line    0x00005f9b      0x3ef CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x0000638a      0x3fb CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_line    0x00006785      0x441 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+ .debug_line    0x00006bc6      0x2b2 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_line    0x00006e78       0xac CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
 
-.debug_str      0x00000000     0x2ca5
+.debug_str      0x00000000     0x2cb3
  .debug_str     0x00000000      0xb44 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                                 0xba2 (size before relaxing)
  .debug_str     0x00000b44      0x4e7 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
@@ -2185,19 +2189,19 @@ LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
                                 0x74e (size before relaxing)
  .debug_str     0x00001adf      0x810 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
                                 0xd7d (size before relaxing)
- .debug_str     0x000022ef      0x161 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
-                                0xae1 (size before relaxing)
- .debug_str     0x00002450      0x501 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+ .debug_str     0x000022ef      0x16f CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+                                0xaef (size before relaxing)
+ .debug_str     0x0000245e      0x501 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
                                 0xbd8 (size before relaxing)
- .debug_str     0x00002951       0x46 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x0000295f       0x46 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
                                 0xd1f (size before relaxing)
- .debug_str     0x00002997      0x107 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_str     0x000029a5      0x107 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
                                 0x72c (size before relaxing)
- .debug_str     0x00002a9e      0x13d CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+ .debug_str     0x00002aac      0x13d CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
                                 0x453 (size before relaxing)
- .debug_str     0x00002bdb       0x70 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_str     0x00002be9       0x70 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
                                 0x364 (size before relaxing)
- .debug_str     0x00002c4b       0x5a CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
+ .debug_str     0x00002c59       0x5a CMakeFiles/servo_control.elf.dir/startup/startup_stm32f407xx.s.obj
                                  0x9a (size before relaxing)
 
 .comment        0x00000000       0x4d
@@ -2215,74 +2219,74 @@ LOAD f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .comment       0x0000004d       0x4e CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
 
-.debug_frame    0x00000000     0x2768
+.debug_frame    0x00000000     0x2784
  .debug_frame   0x00000000      0x1ec CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_frame   0x000001ec      0x148 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_frame   0x00000334      0x188 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .debug_frame   0x000004bc       0xd8 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .debug_frame   0x00000594      0x16c CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_frame   0x00000700      0x5c4 CMakeFiles/servo_control.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_frame   0x00000cc4      0x12c CMakeFiles/servo_control.elf.dir/Src/main.c.obj
- .debug_frame   0x00000df0       0xb8 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
- .debug_frame   0x00000ea8       0x64 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x00000f0c       0xf0 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_frame   0x00000ffc      0x168 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
- .debug_frame   0x00001164       0x30 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_frame   0x00001194       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x000011c0       0x34 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x000011f4       0x20 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
- .debug_frame   0x00001214       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
- .debug_frame   0x00001240       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
- .debug_frame   0x0000126c       0x74 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-printf.o)
- .debug_frame   0x000012e0       0x48 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-setvbuf.o)
- .debug_frame   0x00001328       0x94 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
- .debug_frame   0x000013bc       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wsetup.o)
- .debug_frame   0x000013e8       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x00001444       0x20 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
- .debug_frame   0x00001464       0x8c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
- .debug_frame   0x000014f0       0x70 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fflush.o)
- .debug_frame   0x00001560      0x154 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
- .debug_frame   0x000016b4       0x34 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
- .debug_frame   0x000016e8       0x8c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
- .debug_frame   0x00001774       0x54 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fwalk.o)
- .debug_frame   0x000017c8       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-localeconv.o)
- .debug_frame   0x00001808       0xb0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
- .debug_frame   0x000018b8       0x70 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-makebuf.o)
- .debug_frame   0x00001928       0x30 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
- .debug_frame   0x00001958       0x4c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
- .debug_frame   0x000019a4       0x30 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
- .debug_frame   0x000019d4      0x264 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
- .debug_frame   0x00001c38       0x30 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-s_frexp.o)
- .debug_frame   0x00001c68       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
- .debug_frame   0x00001c94       0x8c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
- .debug_frame   0x00001d20       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strncpy.o)
- .debug_frame   0x00001d4c       0xdc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
- .debug_frame   0x00001e28       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-writer.o)
- .debug_frame   0x00001e54       0x34 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
- .debug_frame   0x00001e88       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-assert.o)
- .debug_frame   0x00001ec8       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-callocr.o)
- .debug_frame   0x00001ef0       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-closer.o)
- .debug_frame   0x00001f1c       0x3c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fclose.o)
- .debug_frame   0x00001f58       0x70 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fiprintf.o)
- .debug_frame   0x00001fc8       0x88 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputwc.o)
- .debug_frame   0x00002050       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fstatr.o)
- .debug_frame   0x0000207c       0x64 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fvwrite.o)
- .debug_frame   0x000020e0       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-isattyr.o)
- .debug_frame   0x0000210c       0x68 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
- .debug_frame   0x00002174       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lseekr.o)
- .debug_frame   0x000021a0       0x4c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mbtowc_r.o)
- .debug_frame   0x000021ec       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memmove.o)
- .debug_frame   0x0000222c       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-readr.o)
- .debug_frame   0x00002258       0x48 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reallocr.o)
- .debug_frame   0x000022a0       0x64 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reent.o)
- .debug_frame   0x00002304       0x4c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wbuf.o)
- .debug_frame   0x00002350       0x60 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wcrtomb.o)
- .debug_frame   0x000023b0       0x3c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wctomb_r.o)
- .debug_frame   0x000023ec       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-abort.o)
- .debug_frame   0x00002414      0x114 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signal.o)
- .debug_frame   0x00002528       0x3c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signalr.o)
- .debug_frame   0x00002564       0xac f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00002610       0x50 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00002660       0xc4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00002724       0x20 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x00002744       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00000cc4      0x148 CMakeFiles/servo_control.elf.dir/Src/main.c.obj
+ .debug_frame   0x00000e0c       0xb8 CMakeFiles/servo_control.elf.dir/Src/retarget.c.obj
+ .debug_frame   0x00000ec4       0x64 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x00000f28       0xf0 CMakeFiles/servo_control.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x00001018      0x168 CMakeFiles/servo_control.elf.dir/Src/syscalls.c.obj
+ .debug_frame   0x00001180       0x30 CMakeFiles/servo_control.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_frame   0x000011b0       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x000011dc       0x34 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00001210       0x20 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
+ .debug_frame   0x00001230       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+ .debug_frame   0x0000125c       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+ .debug_frame   0x00001288       0x74 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-printf.o)
+ .debug_frame   0x000012fc       0x48 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-setvbuf.o)
+ .debug_frame   0x00001344       0x94 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfprintf.o)
+ .debug_frame   0x000013d8       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wsetup.o)
+ .debug_frame   0x00001404       0x5c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00001460       0x20 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+ .debug_frame   0x00001480       0x8c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
+ .debug_frame   0x0000150c       0x70 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fflush.o)
+ .debug_frame   0x0000157c      0x154 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
+ .debug_frame   0x000016d0       0x34 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+ .debug_frame   0x00001704       0x8c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
+ .debug_frame   0x00001790       0x54 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fwalk.o)
+ .debug_frame   0x000017e4       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-localeconv.o)
+ .debug_frame   0x00001824       0xb0 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+ .debug_frame   0x000018d4       0x70 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-makebuf.o)
+ .debug_frame   0x00001944       0x30 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
+ .debug_frame   0x00001974       0x4c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
+ .debug_frame   0x000019c0       0x30 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
+ .debug_frame   0x000019f0      0x264 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+ .debug_frame   0x00001c54       0x30 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-s_frexp.o)
+ .debug_frame   0x00001c84       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001cb0       0x8c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
+ .debug_frame   0x00001d3c       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strncpy.o)
+ .debug_frame   0x00001d68       0xdc f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+ .debug_frame   0x00001e44       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-writer.o)
+ .debug_frame   0x00001e70       0x34 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x00001ea4       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-assert.o)
+ .debug_frame   0x00001ee4       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-callocr.o)
+ .debug_frame   0x00001f0c       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-closer.o)
+ .debug_frame   0x00001f38       0x3c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fclose.o)
+ .debug_frame   0x00001f74       0x70 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fiprintf.o)
+ .debug_frame   0x00001fe4       0x88 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputwc.o)
+ .debug_frame   0x0000206c       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fstatr.o)
+ .debug_frame   0x00002098       0x64 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fvwrite.o)
+ .debug_frame   0x000020fc       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-isattyr.o)
+ .debug_frame   0x00002128       0x68 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
+ .debug_frame   0x00002190       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lseekr.o)
+ .debug_frame   0x000021bc       0x4c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x00002208       0x40 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memmove.o)
+ .debug_frame   0x00002248       0x2c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-readr.o)
+ .debug_frame   0x00002274       0x48 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reallocr.o)
+ .debug_frame   0x000022bc       0x64 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reent.o)
+ .debug_frame   0x00002320       0x4c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wbuf.o)
+ .debug_frame   0x0000236c       0x60 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wcrtomb.o)
+ .debug_frame   0x000023cc       0x3c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wctomb_r.o)
+ .debug_frame   0x00002408       0x28 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-abort.o)
+ .debug_frame   0x00002430      0x114 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signal.o)
+ .debug_frame   0x00002544       0x3c f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signalr.o)
+ .debug_frame   0x00002580       0xac f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x0000262c       0x50 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000267c       0xc4 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00002740       0x20 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x00002760       0x24 f:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixdfsi.o)
