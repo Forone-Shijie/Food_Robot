@@ -229,99 +229,144 @@ void Servo_action4() {
 
     Cal_com_data_STS(1, 3150, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
-    HAL_Delay(500);
+    HAL_Delay(1000);
     Cal_com_data_STS(1, 2048, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
 
     Cal_com_data_STS(2, 3200, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
-    HAL_Delay(500);
+    HAL_Delay(1000);
     Cal_com_data_STS(2, 2048, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
 
     Cal_com_data_STS(3, 3100, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
-    HAL_Delay(500);
+    HAL_Delay(1000);
     Cal_com_data_STS(3, 2048, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
-    HAL_Delay(100);
-
-    Cal_com_data_STS(5, 3118, 2000);
-    HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
     HAL_Delay(500);
+
+    Cal_com_data_STS(5, 2875, 2000);
+    HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
+    HAL_Delay(800);
 
     Cal_com_data_STS(4, 3150, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
-    HAL_Delay(500);
+    HAL_Delay(1000);
 
     Cal_com_data_STS(4, 2048, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
+
     Cal_com_data_STS(5, 2048, 1000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
     HAL_Delay(100);
 
 }
 
+//1st_Servos_actions  主料
+//void Servo_action4() {
+//    Cal_com_data_STS(5, 2645, 1000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(1000);
+//
+//    Cal_com_data_STS(1, 3150, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(500);
+//    Cal_com_data_STS(1, 2048, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(100);
+//
+//    Cal_com_data_STS(2, 3200, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(500);
+//    Cal_com_data_STS(2, 2048, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(100);
+//
+//    Cal_com_data_STS(3, 3100, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(500);
+//    Cal_com_data_STS(3, 2048, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(100);
+//
+//    Cal_com_data_STS(5, 3118, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(500);
+//
+//    Cal_com_data_STS(4, 3150, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(500);
+//
+//    Cal_com_data_STS(4, 2048, 2000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(100);
+//    Cal_com_data_STS(5, 2048, 1000);
+//    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+//    HAL_Delay(100);
+//
+//}
+
 //2nd_Servos_actions  辅料
 void Servo_action5() {
     Cal_com_data_STS(1, 2630, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(500);
+    HAL_Delay(1000);
 
     Cal_com_data_SCS(2, 950, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(2, 100, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(2, 950, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(2, 100, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(1000);
 
     Cal_com_data_SCS(3, 950, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(3, 100, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(3, 950, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(3, 100, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(1000);
 
     Cal_com_data_SCS(4, 950, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(4, 100, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(4, 950, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(4, 100, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(1000);
 
     Cal_com_data_SCS(5, 950, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
-    Cal_com_data_SCS(5, 100, 2000);
-    HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
-    Cal_com_data_SCS(5, 950, 2000);
-    HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
-    HAL_Delay(100);
+    HAL_Delay(500);
     Cal_com_data_SCS(5, 100, 2000);
     HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
     HAL_Delay(500);
+    Cal_com_data_SCS(5, 950, 2000);
+    HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
+    HAL_Delay(500);
+    Cal_com_data_SCS(5, 100, 2000);
+    HAL_UART_Transmit(&huart6, Servo_data, 13, 100);
+    HAL_Delay(1000);
 
 
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
@@ -500,7 +545,7 @@ int main(void) {
 
             if (Rxdata == 2) {
                 //辅料机构
-                Servo_action4();
+                Servo_action5();
                 Rxdata = 0;
             }
         }
@@ -625,7 +670,7 @@ static void MX_USART3_UART_Init(void) {
 
     /* USER CODE END USART3_Init 1 */
     huart3.Instance = USART3;
-    huart3.Init.BaudRate = 115200;
+    huart3.Init.BaudRate = 1000000;
     huart3.Init.WordLength = UART_WORDLENGTH_8B;
     huart3.Init.StopBits = UART_STOPBITS_1;
     huart3.Init.Parity = UART_PARITY_NONE;
@@ -656,7 +701,7 @@ static void MX_USART6_UART_Init(void) {
 
     /* USER CODE END USART6_Init 1 */
     huart6.Instance = USART6;
-    huart6.Init.BaudRate = 115200;
+    huart6.Init.BaudRate = 1000000;
     huart6.Init.WordLength = UART_WORDLENGTH_8B;
     huart6.Init.StopBits = UART_STOPBITS_1;
     huart6.Init.Parity = UART_PARITY_NONE;
