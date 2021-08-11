@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69a254a3-3779-4583-9c08-788ea6b1dc58" name="Default Changelist" comment="completed control of servos">
+      <change afterPath="$PROJECT_DIR$/config/dap-link.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.19.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.19.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
@@ -21,7 +22,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/servo_control.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/servo_control.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/servo_control.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/servo_control.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/servo_control.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/servo_control.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servo_control.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/servo_control.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/servo_control.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/servo_control.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../ITR课题组研究/烹饪机器人/TEST_USART" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD servo_control">
     <configuration name="servo_control.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="servo_control" TARGET_NAME="servo_control.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="servo_control" RUN_TARGET_NAME="servo_control.elf">
@@ -67,13 +68,8 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OCD servo_control" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="servo_control" TARGET_NAME="servo_control.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="servo_control" RUN_TARGET_NAME="servo_control.elf">
-      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="G:\Project\Food_Robot\softwares\servo_control\config\st-link.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="G:\Project\Food_Robot\softwares\servo_control\config\dap-link.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
         <debugger kind="GDB" isBundled="true" />
       </openocd>
       <method v="2">
@@ -107,6 +103,9 @@
       <workItem from="1627286718628" duration="775000" />
       <workItem from="1627547148874" duration="9696000" />
       <workItem from="1627563165143" duration="27000" />
+      <workItem from="1628144154320" duration="6268000" />
+      <workItem from="1628173052685" duration="339000" />
+      <workItem from="1628219732864" duration="4013000" />
     </task>
     <task id="LOCAL-00001" summary="completed control of servos">
       <created>1627289502082</created>

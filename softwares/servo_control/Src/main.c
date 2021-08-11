@@ -77,7 +77,7 @@ uint8_t Uart3_Rx_Cnt = 0;        //接收缓冲计数
 uint8_t USART3_RX_BUF[100];
 uint8_t Rxdata = 0;
 
-uint8_t Servo_data[13] = {0xFF, 0xFF, 0x01, 0x09, 0x03, 0x2A, 0x00, 0x08, 0x00, 0x00, 0xD0, 0x07, 0xE9};//2048
+uint8_t Servo_data[13] = {0xFF, 0xFF, 0x01, 0x09, 0x03, 0x2A, 0x00, 0x08, 0x00, 0x00, 0xD0, 0x07, 0xE9};//不包含加速度控制
 void Cal_com_data_STS(uint8_t id, int position, int speed) {
     uint8_t check_data;
     uint8_t sum;
@@ -116,37 +116,60 @@ void Cal_com_data_SCS(uint8_t id, int position, int speed) {
     Servo_data[12] = check_data;
 }
 
+//FF FF 01 0A 03 29 32 00 04 00 00 D0 07 BB  示例
+uint8_t Servo_data_IncludeA[14] = {0xFF, 0xFF, 0x01, 0x0A, 0x03, 0x29, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00,
+                                   0xE9};//包含加速度控制
+
+void Cal_com_data_STS_IcludeA(uint8_t id, int position, int speed) {
+    uint8_t check_data;
+    uint8_t sum;
+
+    Servo_data_IncludeA[2] = id;
+    Servo_data_IncludeA[7] = position & 255;
+    Servo_data_IncludeA[8] = position >> 8;
+
+    Servo_data_IncludeA[11] = speed & 255;
+    Servo_data_IncludeA[12] = speed >> 8;
+
+    for (int i = 2; i < 13; i++) {
+        sum += Servo_data_IncludeA[i];
+    }
+
+    check_data = ((sum & 255) ^ 255);
+    Servo_data_IncludeA[13] = check_data;
+}
+
 
 //3rd_Servos all up
 void Servo_action1() {
-    Cal_com_data_STS(1, 2700, 3400);
+    Cal_com_data_STS_IcludeA(1, 2700, 3400);
 //    HAL_Delay(100);
-    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data_STS(2, 2700, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data_IncludeA, 14, 100);
+    Cal_com_data_STS_IcludeA(2, 2700, 3400);
 //    HAL_Delay(100);
-    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data_STS(3, 2700, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data_IncludeA, 14, 100);
+    Cal_com_data_STS_IcludeA(3, 2700, 3400);
 //    HAL_Delay(100);
-    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data_STS(4, 2700, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data_IncludeA, 14, 100);
+    Cal_com_data_STS_IcludeA(4, 2700, 3400);
 //    HAL_Delay(100);
-    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+    HAL_UART_Transmit(&huart1, Servo_data_IncludeA, 14, 100);
 }
 
 //3rd_Servos all down
 void Servo_action2() {
-    Cal_com_data_STS(1, 2048, 3400);
+    Cal_com_data_STS_IcludeA(1, 2048, 3400);
 //    HAL_Delay(100);
-    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data_STS(2, 2048, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data_IncludeA, 14, 100);
+    Cal_com_data_STS_IcludeA(2, 2048, 3400);
 //    HAL_Delay(100);
-    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data_STS(3, 2048, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data_IncludeA, 14, 100);
+    Cal_com_data_STS_IcludeA(3, 2048, 3400);
 //    HAL_Delay(100);
-    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
-    Cal_com_data_STS(4, 2048, 3400);
+    HAL_UART_Transmit(&huart1, Servo_data_IncludeA, 14, 100);
+    Cal_com_data_STS_IcludeA(4, 2048, 3400);
 //    HAL_Delay(100);
-    HAL_UART_Transmit(&huart1, Servo_data, 13, 100);
+    HAL_UART_Transmit(&huart1, Servo_data_IncludeA, 14, 100);
 }
 
 //3rd_Servos rolls
@@ -248,7 +271,7 @@ void Servo_action4() {
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
     HAL_Delay(500);
 
-    Cal_com_data_STS(5, 2875, 2000);
+    Cal_com_data_STS(5, 2825, 2000);
     HAL_UART_Transmit(&huart3, Servo_data, 13, 100);
     HAL_Delay(800);
 
@@ -521,12 +544,20 @@ int main(void) {
             if (Rxdata == 3) {
                 //颠锅机构
                 Servo_action1();
-                HAL_Delay(1000);
+                HAL_Delay(500);
                 Servo_action2();
                 HAL_Delay(500);
                 Servo_action1();
-                HAL_Delay(1000);
+                HAL_Delay(500);
                 Servo_action2();//上下上下归位
+                Servo_action1();
+                HAL_Delay(500);
+                Servo_action2();
+                HAL_Delay(500);
+                Servo_action1();
+                HAL_Delay(500);
+                Servo_action2();//上下上下归位
+
 
                 HAL_Delay(300);
 
